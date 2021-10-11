@@ -28,7 +28,7 @@ function temperature(tags){
 }
 
 function getweather(){
-    let key = '9779a3aa683b7134333226d8a15262fa'
+    let key = 
     let URL = `https://api.openweathermap.org/data/2.5/onecall?lat=40.7143&exclude=minutely,hourly&lon=-74.006&units=imperial&appid=${key}`
     let settings = {
         method : 'GET'
