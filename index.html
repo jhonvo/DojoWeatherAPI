@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Dojo Weather Practice</title>
+        <link rel="stylesheet" href="./css/normalize.css"/>
+        <link rel="stylesheet" href="./css/style.css"/>
+    </head>
+    <body>
+        <header>
+            <h1>DojoWeather</h1>
+            <ul class="nav">
+                <li onclick="message()">Burbank</li>
+                <li onclick="message()">Chicago</li>
+                <li onclick="message()">Dallas</li>
+            </ul>
+        </header>
+        <div class="body">
+            <div class="bodytittle">
+                <h2 class="city">New York</h2>
+                <ul class="unitselector">
+                    <li>Show Temperature in</li>
+                    <li>
+                        <select class="selector" onchange="temperature()">
+                            <option value="f">°F</option>
+                            <option value="c">°C</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+            <div class="weatherbox">
+                <div class="day-forecast today">
+                    <h2 class="for-day">Today</h2>
+                    <img class="for-image" src="./assets/some_rain.png" alt="Some Rain">
+                    <p class="for-text today-for"></p>
+                    <ul class="for-temperature">
+                        <li class="today-temp-high"></li>
+                        <li class="today-temp-low"><span class="temp">65</span>°</li>
+                    </ul>
+                </div>
+
+                <div class="day-forecast tomorrow">
+                    <h2 class="for-day">Tomorrow</h2>
+                    <img class="for-image" src="./assets/some_sun.png" alt="Some Sun">
+                    <p class="for-text">Some Sun</p>
+                    <ul class="for-temperature">
+                        <li class="temp-high"><span class="temp">80</span>°</li>
+                        <li class="temp-low"><span class="temp">66</span>°</li>
+                    </ul>
+                </div>
+
+                <div class="day-forecast friday">
+                    <h2 class="for-day">Friday</h2>
+                    <img class="for-image" src="./assets/some_clouds.png" alt="Some Clouds">
+                    <p class="for-text">Some Clouds</p>
+                    <ul class="for-temperature">
+                        <li class="temp-high"><span class="temp">69</span>°</li>
+                        <li class="temp-low"><span class="temp">61</span>°</li>
+                    </ul>
+                </div>
+
+
+                <div class="day-forecast saturday">
+                    <h2 class="for-day">Saturday</h2>
+                    <img class="for-image" src="./assets/some_sun.png" alt="Some Sun">
+                    <p class="for-text">Some Sun</p>
+                    <ul class="for-temperature">
+                        <li class="temp-high"><span class="temp">78</span>°</li>
+                        <li class="temp-low"><span class="temp">70</span>°</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cookies">
+                <img src="./assets/cookie.png" alt="Cookies">
+                <div class="cookie-text">
+                    <h2>Stop! Cookie Time</h2>
+                    <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a> </p>
+                </div>
+                <button onclick="cookiesaccept()" class="acceptcookies">I accept</button>
+            </div>
+        </div>
+        <script src="./js/index.js"></script>
+    </body>
+</html>

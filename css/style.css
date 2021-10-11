@@ -1,0 +1,127 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header{
+    background-color: rgb(160, 198, 246);
+    padding: 0px 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.nav{
+    background-color: rgb(160, 198, 246);
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding-right: 10px;
+    flex-wrap: wrap;
+}
+
+.nav > li {
+    padding: 10px;
+    font-size: 1.4em;
+}
+
+.body{
+    padding: 10px 250px;
+    display: block;
+}
+
+.bodytittle{
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    padding: 15px 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.unitselector{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+}
+
+.selector{
+    margin-left: 15px;
+}
+
+.weatherbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.day-forecast{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(238, 238, 238);
+    margin: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    flex: 1;
+    height: 250px;
+}   
+
+.for-image{
+    width: 100px;
+    border-radius: 50%;
+}
+
+.for-temperature{
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.temp-high,.today-temp-high{
+    color: red;
+}
+
+.temp-low,.today-temp-low{
+    color: blue;
+}
+
+.cookies{
+    border: 1px solid black;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    position: fixed;
+    bottom: 20px;
+    width: 57%;
+}
+
+.cookie-text{
+    width: 500px;
+}
+
+.acceptcookies{
+    width: 100px;
+    padding: 5px 15px;
+    font-size: 1em;
+    font-weight: 500;
+    background-color: rgb(160, 198, 246);
+    border: 1px solid black;
+    box-shadow: 2px 2px black;
+}
